@@ -17,5 +17,9 @@ namespace ProjectTrackerUI
             InitializeComponent();
         }
 
+        private void Team1_Score_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
