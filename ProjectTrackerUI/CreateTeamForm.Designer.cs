@@ -87,6 +87,7 @@ namespace ProjectTrackerUI
             // 
             // Add_Member_btn
             // 
+            this.Add_Member_btn.BackColor = System.Drawing.Color.LightGray;
             this.Add_Member_btn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Add_Member_btn.FlatAppearance.BorderSize = 0;
             this.Add_Member_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
@@ -98,7 +99,7 @@ namespace ProjectTrackerUI
             this.Add_Member_btn.Size = new System.Drawing.Size(171, 36);
             this.Add_Member_btn.TabIndex = 20;
             this.Add_Member_btn.Text = "Add Member";
-            this.Add_Member_btn.UseVisualStyleBackColor = true;
+            this.Add_Member_btn.UseVisualStyleBackColor = false;
             // 
             // select_team_dropdown
             // 
@@ -272,6 +273,7 @@ namespace ProjectTrackerUI
             // 
             // create_Team_btn
             // 
+            this.create_Team_btn.BackColor = System.Drawing.Color.LightGray;
             this.create_Team_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.create_Team_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
             this.create_Team_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
@@ -282,10 +284,11 @@ namespace ProjectTrackerUI
             this.create_Team_btn.Size = new System.Drawing.Size(220, 53);
             this.create_Team_btn.TabIndex = 23;
             this.create_Team_btn.Text = "Create Team";
-            this.create_Team_btn.UseVisualStyleBackColor = true;
+            this.create_Team_btn.UseVisualStyleBackColor = false;
             // 
             // Tm_delete_btn
             // 
+            this.Tm_delete_btn.BackColor = System.Drawing.Color.LightGray;
             this.Tm_delete_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Tm_delete_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
             this.Tm_delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
@@ -296,7 +299,7 @@ namespace ProjectTrackerUI
             this.Tm_delete_btn.Size = new System.Drawing.Size(106, 69);
             this.Tm_delete_btn.TabIndex = 24;
             this.Tm_delete_btn.Text = "Delete Selected";
-            this.Tm_delete_btn.UseVisualStyleBackColor = true;
+            this.Tm_delete_btn.UseVisualStyleBackColor = false;
             // 
             // CreateTeamForm
             // 
