@@ -32,11 +32,11 @@ namespace ProjectTrackerUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTournamentForm));
             this.Tor_Name_label = new System.Windows.Forms.Label();
             this.Tournament_Label = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Tournament_Name_label = new System.Windows.Forms.Label();
             this.Tr_Name_txtbx = new System.Windows.Forms.TextBox();
             this.Entry_Fee_txtbx = new System.Windows.Forms.TextBox();
             this.Entry_fee_label = new System.Windows.Forms.Label();
-            this.CR_select_label = new System.Windows.Forms.Label();
+            this.create_tour_select_label = new System.Windows.Forms.Label();
             this.select_team_dropdown = new System.Windows.Forms.ComboBox();
             this.create_new_team_link = new System.Windows.Forms.LinkLabel();
             this.Add_Team_btn = new System.Windows.Forms.Button();
@@ -75,17 +75,17 @@ namespace ProjectTrackerUI
             this.Tournament_Label.Text = "Tournament ";
             this.Tournament_Label.Click += new System.EventHandler(this.Tournament_Label_Click);
             // 
-            // label1
+            // Tournament_Name_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(22, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 30);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Tournament Name";
+            this.Tournament_Name_label.AutoSize = true;
+            this.Tournament_Name_label.BackColor = System.Drawing.Color.Transparent;
+            this.Tournament_Name_label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tournament_Name_label.ForeColor = System.Drawing.Color.DimGray;
+            this.Tournament_Name_label.Location = new System.Drawing.Point(22, 74);
+            this.Tournament_Name_label.Name = "Tournament_Name_label";
+            this.Tournament_Name_label.Size = new System.Drawing.Size(237, 30);
+            this.Tournament_Name_label.TabIndex = 4;
+            this.Tournament_Name_label.Text = "Tournament Name";
             // 
             // Tr_Name_txtbx
             // 
@@ -118,17 +118,17 @@ namespace ProjectTrackerUI
             this.Entry_fee_label.TabIndex = 12;
             this.Entry_fee_label.Text = "Entry Fee";
             // 
-            // CR_select_label
+            // create_tour_select_label
             // 
-            this.CR_select_label.AutoSize = true;
-            this.CR_select_label.BackColor = System.Drawing.Color.Transparent;
-            this.CR_select_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CR_select_label.ForeColor = System.Drawing.Color.DimGray;
-            this.CR_select_label.Location = new System.Drawing.Point(22, 234);
-            this.CR_select_label.Name = "CR_select_label";
-            this.CR_select_label.Size = new System.Drawing.Size(137, 24);
-            this.CR_select_label.TabIndex = 14;
-            this.CR_select_label.Text = "Select Team";
+            this.create_tour_select_label.AutoSize = true;
+            this.create_tour_select_label.BackColor = System.Drawing.Color.Transparent;
+            this.create_tour_select_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.create_tour_select_label.ForeColor = System.Drawing.Color.DimGray;
+            this.create_tour_select_label.Location = new System.Drawing.Point(22, 234);
+            this.create_tour_select_label.Name = "create_tour_select_label";
+            this.create_tour_select_label.Size = new System.Drawing.Size(137, 24);
+            this.create_tour_select_label.TabIndex = 14;
+            this.create_tour_select_label.Text = "Select Team";
             // 
             // select_team_dropdown
             // 
@@ -162,7 +162,7 @@ namespace ProjectTrackerUI
             this.Add_Team_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Add_Team_btn.Location = new System.Drawing.Point(77, 312);
             this.Add_Team_btn.Name = "Add_Team_btn";
-            this.Add_Team_btn.Size = new System.Drawing.Size(168, 33);
+            this.Add_Team_btn.Size = new System.Drawing.Size(168, 44);
             this.Add_Team_btn.TabIndex = 17;
             this.Add_Team_btn.Text = "Add Team";
             this.Add_Team_btn.UseVisualStyleBackColor = true;
@@ -174,9 +174,9 @@ namespace ProjectTrackerUI
             this.create_prize_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.create_prize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.create_prize_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.create_prize_btn.Location = new System.Drawing.Point(86, 369);
+            this.create_prize_btn.Location = new System.Drawing.Point(77, 374);
             this.create_prize_btn.Name = "create_prize_btn";
-            this.create_prize_btn.Size = new System.Drawing.Size(139, 33);
+            this.create_prize_btn.Size = new System.Drawing.Size(168, 43);
             this.create_prize_btn.TabIndex = 18;
             this.create_prize_btn.Text = "Create Prize";
             this.create_prize_btn.UseVisualStyleBackColor = true;
@@ -285,17 +285,17 @@ namespace ProjectTrackerUI
             this.Controls.Add(this.Add_Team_btn);
             this.Controls.Add(this.create_new_team_link);
             this.Controls.Add(this.select_team_dropdown);
-            this.Controls.Add(this.CR_select_label);
+            this.Controls.Add(this.create_tour_select_label);
             this.Controls.Add(this.Entry_Fee_txtbx);
             this.Controls.Add(this.Entry_fee_label);
             this.Controls.Add(this.Tr_Name_txtbx);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Tournament_Name_label);
             this.Controls.Add(this.Tournament_Label);
             this.Controls.Add(this.Tor_Name_label);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CreateTournamentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Tournament";
@@ -309,11 +309,11 @@ namespace ProjectTrackerUI
 
         private System.Windows.Forms.Label Tor_Name_label;
         private System.Windows.Forms.Label Tournament_Label;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Tournament_Name_label;
         private System.Windows.Forms.TextBox Tr_Name_txtbx;
         private System.Windows.Forms.TextBox Entry_Fee_txtbx;
         private System.Windows.Forms.Label Entry_fee_label;
-        private System.Windows.Forms.Label CR_select_label;
+        private System.Windows.Forms.Label create_tour_select_label;
         private System.Windows.Forms.ComboBox select_team_dropdown;
         private System.Windows.Forms.LinkLabel create_new_team_link;
         private System.Windows.Forms.Button Add_Team_btn;

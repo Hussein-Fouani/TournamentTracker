@@ -49,10 +49,10 @@ namespace ProjectTrackerUI
             // Tournament_Label
             // 
             this.Tournament_Label.AutoSize = true;
-            this.Tournament_Label.BackColor = System.Drawing.Color.Black;
+            this.Tournament_Label.BackColor = System.Drawing.Color.Transparent;
             this.Tournament_Label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Tournament_Label.ForeColor = System.Drawing.Color.Transparent;
-            this.Tournament_Label.Location = new System.Drawing.Point(31, 28);
+            this.Tournament_Label.Location = new System.Drawing.Point(22, 42);
             this.Tournament_Label.Name = "Tournament_Label";
             this.Tournament_Label.Size = new System.Drawing.Size(163, 30);
             this.Tournament_Label.TabIndex = 0;
@@ -61,10 +61,10 @@ namespace ProjectTrackerUI
             // Tor_Name_label
             // 
             this.Tor_Name_label.AutoSize = true;
-            this.Tor_Name_label.BackColor = System.Drawing.Color.Black;
+            this.Tor_Name_label.BackColor = System.Drawing.Color.Transparent;
             this.Tor_Name_label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Tor_Name_label.ForeColor = System.Drawing.Color.Transparent;
-            this.Tor_Name_label.Location = new System.Drawing.Point(186, 28);
+            this.Tor_Name_label.Location = new System.Drawing.Point(177, 42);
             this.Tor_Name_label.Name = "Tor_Name_label";
             this.Tor_Name_label.Size = new System.Drawing.Size(105, 30);
             this.Tor_Name_label.TabIndex = 1;
@@ -73,10 +73,10 @@ namespace ProjectTrackerUI
             // Round_label
             // 
             this.Round_label.AutoSize = true;
-            this.Round_label.BackColor = System.Drawing.Color.Black;
+            this.Round_label.BackColor = System.Drawing.Color.Transparent;
             this.Round_label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Round_label.ForeColor = System.Drawing.Color.White;
-            this.Round_label.Location = new System.Drawing.Point(31, 85);
+            this.Round_label.Location = new System.Drawing.Point(22, 99);
             this.Round_label.Name = "Round_label";
             this.Round_label.Size = new System.Drawing.Size(163, 30);
             this.Round_label.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace ProjectTrackerUI
             // 
             this.Round_dropdown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Round_dropdown.FormattingEnabled = true;
-            this.Round_dropdown.Location = new System.Drawing.Point(193, 86);
+            this.Round_dropdown.Location = new System.Drawing.Point(184, 100);
             this.Round_dropdown.Name = "Round_dropdown";
             this.Round_dropdown.Size = new System.Drawing.Size(235, 29);
             this.Round_dropdown.TabIndex = 3;
@@ -94,11 +94,11 @@ namespace ProjectTrackerUI
             // Unplayed_checkbox
             // 
             this.Unplayed_checkbox.AutoSize = true;
-            this.Unplayed_checkbox.BackColor = System.Drawing.Color.Black;
+            this.Unplayed_checkbox.BackColor = System.Drawing.Color.Transparent;
             this.Unplayed_checkbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Unplayed_checkbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Unplayed_checkbox.ForeColor = System.Drawing.Color.White;
-            this.Unplayed_checkbox.Location = new System.Drawing.Point(193, 132);
+            this.Unplayed_checkbox.Location = new System.Drawing.Point(184, 135);
             this.Unplayed_checkbox.Name = "Unplayed_checkbox";
             this.Unplayed_checkbox.Size = new System.Drawing.Size(121, 24);
             this.Unplayed_checkbox.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace ProjectTrackerUI
             this.Matchup_List_Box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Matchup_List_Box.FormattingEnabled = true;
             this.Matchup_List_Box.ItemHeight = 15;
-            this.Matchup_List_Box.Location = new System.Drawing.Point(46, 181);
+            this.Matchup_List_Box.Location = new System.Drawing.Point(22, 190);
             this.Matchup_List_Box.Name = "Matchup_List_Box";
             this.Matchup_List_Box.Size = new System.Drawing.Size(375, 227);
             this.Matchup_List_Box.TabIndex = 5;
@@ -118,10 +118,10 @@ namespace ProjectTrackerUI
             // Team1_Name
             // 
             this.Team1_Name.AutoSize = true;
-            this.Team1_Name.BackColor = System.Drawing.Color.Black;
+            this.Team1_Name.BackColor = System.Drawing.Color.Transparent;
             this.Team1_Name.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Team1_Name.ForeColor = System.Drawing.Color.Transparent;
-            this.Team1_Name.Location = new System.Drawing.Point(552, 111);
+            this.Team1_Name.Location = new System.Drawing.Point(615, 57);
             this.Team1_Name.Name = "Team1_Name";
             this.Team1_Name.Size = new System.Drawing.Size(162, 30);
             this.Team1_Name.TabIndex = 6;
@@ -130,10 +130,10 @@ namespace ProjectTrackerUI
             // Team1_Score
             // 
             this.Team1_Score.AutoSize = true;
-            this.Team1_Score.BackColor = System.Drawing.Color.Black;
+            this.Team1_Score.BackColor = System.Drawing.Color.Transparent;
             this.Team1_Score.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Team1_Score.ForeColor = System.Drawing.Color.White;
-            this.Team1_Score.Location = new System.Drawing.Point(528, 171);
+            this.Team1_Score.ForeColor = System.Drawing.Color.Bisque;
+            this.Team1_Score.Location = new System.Drawing.Point(576, 117);
             this.Team1_Score.Name = "Team1_Score";
             this.Team1_Score.Size = new System.Drawing.Size(80, 30);
             this.Team1_Score.TabIndex = 7;
@@ -143,7 +143,7 @@ namespace ProjectTrackerUI
             // Team1_scoretxt
             // 
             this.Team1_scoretxt.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Team1_scoretxt.Location = new System.Drawing.Point(614, 166);
+            this.Team1_scoretxt.Location = new System.Drawing.Point(662, 112);
             this.Team1_scoretxt.Name = "Team1_scoretxt";
             this.Team1_scoretxt.Size = new System.Drawing.Size(100, 35);
             this.Team1_scoretxt.TabIndex = 8;
@@ -151,7 +151,7 @@ namespace ProjectTrackerUI
             // Team2_scoretxt
             // 
             this.Team2_scoretxt.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Team2_scoretxt.Location = new System.Drawing.Point(614, 347);
+            this.Team2_scoretxt.Location = new System.Drawing.Point(662, 373);
             this.Team2_scoretxt.Name = "Team2_scoretxt";
             this.Team2_scoretxt.Size = new System.Drawing.Size(100, 35);
             this.Team2_scoretxt.TabIndex = 11;
@@ -159,10 +159,10 @@ namespace ProjectTrackerUI
             // Team2_Score
             // 
             this.Team2_Score.AutoSize = true;
-            this.Team2_Score.BackColor = System.Drawing.Color.Black;
+            this.Team2_Score.BackColor = System.Drawing.Color.Transparent;
             this.Team2_Score.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Team2_Score.ForeColor = System.Drawing.Color.White;
-            this.Team2_Score.Location = new System.Drawing.Point(528, 352);
+            this.Team2_Score.Location = new System.Drawing.Point(576, 378);
             this.Team2_Score.Name = "Team2_Score";
             this.Team2_Score.Size = new System.Drawing.Size(80, 30);
             this.Team2_Score.TabIndex = 10;
@@ -171,10 +171,10 @@ namespace ProjectTrackerUI
             // Team2_Label
             // 
             this.Team2_Label.AutoSize = true;
-            this.Team2_Label.BackColor = System.Drawing.Color.Black;
+            this.Team2_Label.BackColor = System.Drawing.Color.Transparent;
             this.Team2_Label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Team2_Label.ForeColor = System.Drawing.Color.White;
-            this.Team2_Label.Location = new System.Drawing.Point(552, 296);
+            this.Team2_Label.Location = new System.Drawing.Point(600, 322);
             this.Team2_Label.Name = "Team2_Label";
             this.Team2_Label.Size = new System.Drawing.Size(157, 30);
             this.Team2_Label.TabIndex = 9;
@@ -183,10 +183,10 @@ namespace ProjectTrackerUI
             // vs_Label
             // 
             this.vs_Label.AutoSize = true;
-            this.vs_Label.BackColor = System.Drawing.Color.Black;
+            this.vs_Label.BackColor = System.Drawing.Color.Transparent;
             this.vs_Label.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.vs_Label.ForeColor = System.Drawing.Color.White;
-            this.vs_Label.Location = new System.Drawing.Point(552, 236);
+            this.vs_Label.Location = new System.Drawing.Point(525, 236);
             this.vs_Label.Name = "vs_Label";
             this.vs_Label.Size = new System.Drawing.Size(61, 28);
             this.vs_Label.TabIndex = 12;
@@ -199,9 +199,9 @@ namespace ProjectTrackerUI
             this.Score_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Score_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Score_Btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Score_Btn.Location = new System.Drawing.Point(724, 230);
+            this.Score_Btn.Location = new System.Drawing.Point(751, 224);
             this.Score_Btn.Name = "Score_Btn";
-            this.Score_Btn.Size = new System.Drawing.Size(112, 61);
+            this.Score_Btn.Size = new System.Drawing.Size(96, 54);
             this.Score_Btn.TabIndex = 13;
             this.Score_Btn.Text = "Score";
             this.Score_Btn.UseVisualStyleBackColor = true;
@@ -211,6 +211,7 @@ namespace ProjectTrackerUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(859, 450);
             this.Controls.Add(this.Score_Btn);
             this.Controls.Add(this.vs_Label);

@@ -37,16 +37,16 @@ namespace ProjectTrackerUI
             this.select_team_dropdown = new System.Windows.Forms.ComboBox();
             this.Team_select_label = new System.Windows.Forms.Label();
             this.create_Team_grpbx = new System.Windows.Forms.GroupBox();
+            this.clear_btn = new System.Windows.Forms.Button();
+            this.create_member_btn = new System.Windows.Forms.Button();
+            this.cellphone_txtbx = new System.Windows.Forms.TextBox();
+            this.CellPhone_label = new System.Windows.Forms.Label();
+            this.email_txtbx = new System.Windows.Forms.TextBox();
+            this.Email_label = new System.Windows.Forms.Label();
+            this.last_name_txtbx = new System.Windows.Forms.TextBox();
+            this.Last_Name_label = new System.Windows.Forms.Label();
             this.First_Name_txtbx = new System.Windows.Forms.TextBox();
             this.FirstName_label = new System.Windows.Forms.Label();
-            this.Last_Name_label = new System.Windows.Forms.Label();
-            this.last_name_txtbx = new System.Windows.Forms.TextBox();
-            this.Email_label = new System.Windows.Forms.Label();
-            this.email_txtbx = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cellphone_txtbx = new System.Windows.Forms.TextBox();
-            this.create_member_btn = new System.Windows.Forms.Button();
-            this.clear_btn = new System.Windows.Forms.Button();
             this.Team_Member_listBox = new System.Windows.Forms.ListBox();
             this.create_Team_btn = new System.Windows.Forms.Button();
             this.Tm_delete_btn = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@ namespace ProjectTrackerUI
             this.create_Team_grpbx.Controls.Add(this.clear_btn);
             this.create_Team_grpbx.Controls.Add(this.create_member_btn);
             this.create_Team_grpbx.Controls.Add(this.cellphone_txtbx);
-            this.create_Team_grpbx.Controls.Add(this.label3);
+            this.create_Team_grpbx.Controls.Add(this.CellPhone_label);
             this.create_Team_grpbx.Controls.Add(this.email_txtbx);
             this.create_Team_grpbx.Controls.Add(this.Email_label);
             this.create_Team_grpbx.Controls.Add(this.last_name_txtbx);
@@ -144,6 +144,100 @@ namespace ProjectTrackerUI
             this.create_Team_grpbx.TabIndex = 21;
             this.create_Team_grpbx.TabStop = false;
             this.create_Team_grpbx.Text = "Add New Member";
+            // 
+            // clear_btn
+            // 
+            this.clear_btn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.clear_btn.FlatAppearance.BorderSize = 2;
+            this.clear_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.clear_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clear_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.clear_btn.Location = new System.Drawing.Point(9, 240);
+            this.clear_btn.Name = "clear_btn";
+            this.clear_btn.Size = new System.Drawing.Size(106, 43);
+            this.clear_btn.TabIndex = 22;
+            this.clear_btn.Text = "Clear";
+            this.clear_btn.UseVisualStyleBackColor = true;
+            this.clear_btn.Click += new System.EventHandler(this.clear_btn_Click);
+            // 
+            // create_member_btn
+            // 
+            this.create_member_btn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.create_member_btn.FlatAppearance.BorderSize = 2;
+            this.create_member_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.create_member_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.create_member_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.create_member_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.create_member_btn.Location = new System.Drawing.Point(182, 240);
+            this.create_member_btn.Name = "create_member_btn";
+            this.create_member_btn.Size = new System.Drawing.Size(168, 43);
+            this.create_member_btn.TabIndex = 21;
+            this.create_member_btn.Text = "Create Member";
+            this.create_member_btn.UseVisualStyleBackColor = true;
+            // 
+            // cellphone_txtbx
+            // 
+            this.cellphone_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cellphone_txtbx.Location = new System.Drawing.Point(121, 176);
+            this.cellphone_txtbx.Multiline = true;
+            this.cellphone_txtbx.Name = "cellphone_txtbx";
+            this.cellphone_txtbx.Size = new System.Drawing.Size(242, 30);
+            this.cellphone_txtbx.TabIndex = 10;
+            // 
+            // CellPhone_label
+            // 
+            this.CellPhone_label.AutoSize = true;
+            this.CellPhone_label.BackColor = System.Drawing.Color.Transparent;
+            this.CellPhone_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CellPhone_label.ForeColor = System.Drawing.Color.Black;
+            this.CellPhone_label.Location = new System.Drawing.Point(6, 182);
+            this.CellPhone_label.Name = "CellPhone_label";
+            this.CellPhone_label.Size = new System.Drawing.Size(117, 24);
+            this.CellPhone_label.TabIndex = 9;
+            this.CellPhone_label.Text = "CellPhone";
+            // 
+            // email_txtbx
+            // 
+            this.email_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.email_txtbx.Location = new System.Drawing.Point(121, 130);
+            this.email_txtbx.Multiline = true;
+            this.email_txtbx.Name = "email_txtbx";
+            this.email_txtbx.Size = new System.Drawing.Size(242, 30);
+            this.email_txtbx.TabIndex = 10;
+            // 
+            // Email_label
+            // 
+            this.Email_label.AutoSize = true;
+            this.Email_label.BackColor = System.Drawing.Color.Transparent;
+            this.Email_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Email_label.ForeColor = System.Drawing.Color.Black;
+            this.Email_label.Location = new System.Drawing.Point(17, 136);
+            this.Email_label.Name = "Email_label";
+            this.Email_label.Size = new System.Drawing.Size(64, 24);
+            this.Email_label.TabIndex = 9;
+            this.Email_label.Text = "Email";
+            // 
+            // last_name_txtbx
+            // 
+            this.last_name_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.last_name_txtbx.Location = new System.Drawing.Point(121, 79);
+            this.last_name_txtbx.Multiline = true;
+            this.last_name_txtbx.Name = "last_name_txtbx";
+            this.last_name_txtbx.Size = new System.Drawing.Size(242, 31);
+            this.last_name_txtbx.TabIndex = 10;
+            // 
+            // Last_Name_label
+            // 
+            this.Last_Name_label.AutoSize = true;
+            this.Last_Name_label.BackColor = System.Drawing.Color.Transparent;
+            this.Last_Name_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Last_Name_label.ForeColor = System.Drawing.Color.Black;
+            this.Last_Name_label.Location = new System.Drawing.Point(1, 86);
+            this.Last_Name_label.Name = "Last_Name_label";
+            this.Last_Name_label.Size = new System.Drawing.Size(114, 24);
+            this.Last_Name_label.TabIndex = 9;
+            this.Last_Name_label.Text = "LastName";
             // 
             // First_Name_txtbx
             // 
@@ -165,100 +259,6 @@ namespace ProjectTrackerUI
             this.FirstName_label.Size = new System.Drawing.Size(109, 24);
             this.FirstName_label.TabIndex = 9;
             this.FirstName_label.Text = "FirstName";
-            // 
-            // Last_Name_label
-            // 
-            this.Last_Name_label.AutoSize = true;
-            this.Last_Name_label.BackColor = System.Drawing.Color.Transparent;
-            this.Last_Name_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Last_Name_label.ForeColor = System.Drawing.Color.Black;
-            this.Last_Name_label.Location = new System.Drawing.Point(1, 86);
-            this.Last_Name_label.Name = "Last_Name_label";
-            this.Last_Name_label.Size = new System.Drawing.Size(114, 24);
-            this.Last_Name_label.TabIndex = 9;
-            this.Last_Name_label.Text = "LastName";
-            // 
-            // last_name_txtbx
-            // 
-            this.last_name_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.last_name_txtbx.Location = new System.Drawing.Point(121, 79);
-            this.last_name_txtbx.Multiline = true;
-            this.last_name_txtbx.Name = "last_name_txtbx";
-            this.last_name_txtbx.Size = new System.Drawing.Size(242, 31);
-            this.last_name_txtbx.TabIndex = 10;
-            // 
-            // Email_label
-            // 
-            this.Email_label.AutoSize = true;
-            this.Email_label.BackColor = System.Drawing.Color.Transparent;
-            this.Email_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Email_label.ForeColor = System.Drawing.Color.Black;
-            this.Email_label.Location = new System.Drawing.Point(17, 136);
-            this.Email_label.Name = "Email_label";
-            this.Email_label.Size = new System.Drawing.Size(64, 24);
-            this.Email_label.TabIndex = 9;
-            this.Email_label.Text = "Email";
-            // 
-            // email_txtbx
-            // 
-            this.email_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.email_txtbx.Location = new System.Drawing.Point(121, 130);
-            this.email_txtbx.Multiline = true;
-            this.email_txtbx.Name = "email_txtbx";
-            this.email_txtbx.Size = new System.Drawing.Size(242, 30);
-            this.email_txtbx.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 24);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "CellPhone";
-            // 
-            // cellphone_txtbx
-            // 
-            this.cellphone_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cellphone_txtbx.Location = new System.Drawing.Point(121, 176);
-            this.cellphone_txtbx.Multiline = true;
-            this.cellphone_txtbx.Name = "cellphone_txtbx";
-            this.cellphone_txtbx.Size = new System.Drawing.Size(242, 30);
-            this.cellphone_txtbx.TabIndex = 10;
-            // 
-            // create_member_btn
-            // 
-            this.create_member_btn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.create_member_btn.FlatAppearance.BorderSize = 2;
-            this.create_member_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.create_member_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.create_member_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.create_member_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.create_member_btn.Location = new System.Drawing.Point(182, 240);
-            this.create_member_btn.Name = "create_member_btn";
-            this.create_member_btn.Size = new System.Drawing.Size(168, 43);
-            this.create_member_btn.TabIndex = 21;
-            this.create_member_btn.Text = "Create Member";
-            this.create_member_btn.UseVisualStyleBackColor = true;
-            // 
-            // clear_btn
-            // 
-            this.clear_btn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.clear_btn.FlatAppearance.BorderSize = 2;
-            this.clear_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.clear_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clear_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_btn.Location = new System.Drawing.Point(9, 240);
-            this.clear_btn.Name = "clear_btn";
-            this.clear_btn.Size = new System.Drawing.Size(106, 43);
-            this.clear_btn.TabIndex = 22;
-            this.clear_btn.Text = "Clear";
-            this.clear_btn.UseVisualStyleBackColor = true;
-            this.clear_btn.Click += new System.EventHandler(this.clear_btn_Click);
             // 
             // Team_Member_listBox
             // 
@@ -345,7 +345,7 @@ namespace ProjectTrackerUI
         private System.Windows.Forms.Button clear_btn;
         private System.Windows.Forms.Button create_member_btn;
         private System.Windows.Forms.TextBox cellphone_txtbx;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label CellPhone_label;
         private System.Windows.Forms.TextBox email_txtbx;
         private System.Windows.Forms.Label Email_label;
         private System.Windows.Forms.TextBox last_name_txtbx;

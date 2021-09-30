@@ -30,7 +30,7 @@ namespace ProjectTrackerUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreatePrizeForm));
-            this.Tr_Name_txtbx = new System.Windows.Forms.TextBox();
+            this.Prize_Number_txtbx = new System.Windows.Forms.TextBox();
             this.Place_number_label = new System.Windows.Forms.Label();
             this.create_Prize_label = new System.Windows.Forms.Label();
             this.Place_name_txtbx = new System.Windows.Forms.TextBox();
@@ -43,14 +43,14 @@ namespace ProjectTrackerUI
             this.Create_prize_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Tr_Name_txtbx
+            // Prize_Number_txtbx
             // 
-            this.Tr_Name_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tr_Name_txtbx.Location = new System.Drawing.Point(197, 128);
-            this.Tr_Name_txtbx.Multiline = true;
-            this.Tr_Name_txtbx.Name = "Tr_Name_txtbx";
-            this.Tr_Name_txtbx.Size = new System.Drawing.Size(219, 31);
-            this.Tr_Name_txtbx.TabIndex = 16;
+            this.Prize_Number_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Prize_Number_txtbx.Location = new System.Drawing.Point(197, 128);
+            this.Prize_Number_txtbx.Multiline = true;
+            this.Prize_Number_txtbx.Name = "Prize_Number_txtbx";
+            this.Prize_Number_txtbx.Size = new System.Drawing.Size(219, 31);
+            this.Prize_Number_txtbx.TabIndex = 16;
             // 
             // Place_number_label
             // 
@@ -92,7 +92,7 @@ namespace ProjectTrackerUI
             this.Place_Name_label.BackColor = System.Drawing.Color.Transparent;
             this.Place_Name_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Place_Name_label.ForeColor = System.Drawing.Color.White;
-            this.Place_Name_label.Location = new System.Drawing.Point(37, 182);
+            this.Place_Name_label.Location = new System.Drawing.Point(46, 182);
             this.Place_Name_label.Name = "Place_Name_label";
             this.Place_Name_label.Size = new System.Drawing.Size(145, 24);
             this.Place_Name_label.TabIndex = 17;
@@ -113,7 +113,7 @@ namespace ProjectTrackerUI
             this.Prize_Amount_label.BackColor = System.Drawing.Color.Transparent;
             this.Prize_Amount_label.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Prize_Amount_label.ForeColor = System.Drawing.Color.White;
-            this.Prize_Amount_label.Location = new System.Drawing.Point(45, 228);
+            this.Prize_Amount_label.Location = new System.Drawing.Point(56, 228);
             this.Prize_Amount_label.Name = "Prize_Amount_label";
             this.Prize_Amount_label.Size = new System.Drawing.Size(135, 24);
             this.Prize_Amount_label.TabIndex = 19;
@@ -134,7 +134,7 @@ namespace ProjectTrackerUI
             this.Prize_percent_label.BackColor = System.Drawing.Color.Transparent;
             this.Prize_percent_label.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Prize_percent_label.ForeColor = System.Drawing.Color.White;
-            this.Prize_percent_label.Location = new System.Drawing.Point(5, 323);
+            this.Prize_percent_label.Location = new System.Drawing.Point(16, 323);
             this.Prize_percent_label.Name = "Prize_percent_label";
             this.Prize_percent_label.Size = new System.Drawing.Size(175, 22);
             this.Prize_percent_label.TabIndex = 21;
@@ -182,9 +182,10 @@ namespace ProjectTrackerUI
             this.Controls.Add(this.Prize_Amount_label);
             this.Controls.Add(this.Place_name_txtbx);
             this.Controls.Add(this.Place_Name_label);
-            this.Controls.Add(this.Tr_Name_txtbx);
+            this.Controls.Add(this.Prize_Number_txtbx);
             this.Controls.Add(this.Place_number_label);
             this.Controls.Add(this.create_Prize_label);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreatePrizeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreatePrize";
@@ -195,7 +196,7 @@ namespace ProjectTrackerUI
 
         #endregion
 
-        private System.Windows.Forms.TextBox Tr_Name_txtbx;
+        private System.Windows.Forms.TextBox Prize_Number_txtbx;
         private System.Windows.Forms.Label Place_number_label;
         private System.Windows.Forms.Label create_Prize_label;
         private System.Windows.Forms.TextBox Place_name_txtbx;
