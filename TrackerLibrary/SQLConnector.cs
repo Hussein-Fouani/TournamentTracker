@@ -18,6 +18,7 @@ namespace TrackerLibrary
         public PrizeModel CreatePrize(PrizeModel model)
         {
             model.ID = 1;
+            return model;
         }
     }
 }

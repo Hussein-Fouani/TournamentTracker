@@ -36,7 +36,18 @@ namespace ProjectTrackerUI
                 {
                     item.CreatePrize(prizeModel);
                 }
-                
+                Place_name_txtbx.Clear();
+                Place_Number_txtbx.Clear();
+                Prize_Amount_txtbx.Clear();
+                Prize_Percentage_txtbx.Clear();
+
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Ivalid Data Entered Are Detected,Please Try Again","ALERT!",MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
             }
         }
 

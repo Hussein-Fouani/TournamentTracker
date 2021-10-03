@@ -104,6 +104,7 @@ namespace ProjectTrackerUI
             this.Prize_Amount_txtbx.Location = new System.Drawing.Point(197, 221);
             this.Prize_Amount_txtbx.Multiline = true;
             this.Prize_Amount_txtbx.Name = "Prize_Amount_txtbx";
+            this.Prize_Amount_txtbx.PlaceholderText = "0";
             this.Prize_Amount_txtbx.Size = new System.Drawing.Size(219, 31);
             this.Prize_Amount_txtbx.TabIndex = 20;
             // 
@@ -125,6 +126,7 @@ namespace ProjectTrackerUI
             this.Prize_Percentage_txtbx.Location = new System.Drawing.Point(197, 314);
             this.Prize_Percentage_txtbx.Multiline = true;
             this.Prize_Percentage_txtbx.Name = "Prize_Percentage_txtbx";
+            this.Prize_Percentage_txtbx.PlaceholderText = "0";
             this.Prize_Percentage_txtbx.Size = new System.Drawing.Size(219, 31);
             this.Prize_Percentage_txtbx.TabIndex = 22;
             // 
