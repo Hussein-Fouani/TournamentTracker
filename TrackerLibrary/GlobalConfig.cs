@@ -8,11 +8,22 @@ namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> connections { get;private set; }
+        public static List<IDataConnection> connections { get; private set; } = new();
 
         public static void InitializeConnections(bool database,bool texfiles)
         {
-            model
+            // Set Up the Sql Connection
+            if (database)
+            {
+                SQLConnector connector = new();
+                connections.Add(connector);
+            }
+            // create the text  Connection
+            if (texfiles)
+            {
+
+            }
+
         }        
 
     }
