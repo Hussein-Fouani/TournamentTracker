@@ -11,7 +11,7 @@ namespace TrackerLibrary
     public class SQLConnector : IDataConnection
     {
         /// <summary>
-        /// Savea Prize to database
+        /// Save a Prize to database
         /// </summary>
         /// <param name="model"> the Prize information  </param>
         /// <returns>the prize inforamtion including the unique idenifier</returns>
