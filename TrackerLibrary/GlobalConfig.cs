@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,12 +21,13 @@ namespace TrackerLibrary
                 connections.Add(connector);
             }
             // create the text  Connection
-            if (texfiles)
+            if (texfiles)   
             {
 
             }
-
-        }        
+            
+        }
+        public static string CnnString(string constring) => ConfigurationManager.ConnectionStrings[constring].ConnectionString;
 
     }
 }

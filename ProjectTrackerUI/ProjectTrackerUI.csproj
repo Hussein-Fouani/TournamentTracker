@@ -1,11 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	  <connectionStrings>
+		  <add> name ="Tournament" connectionString="Server=.\SQLEXPRESS;DataBase=Tournament;Trusted_Connection=True;SystemProvider;"providerName="System.Data.SqlClient"</add>
+	  </connectionStrings> 
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>ProjectTrackerUI.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj" />
