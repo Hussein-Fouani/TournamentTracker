@@ -2,7 +2,7 @@
 
   <PropertyGroup>
 	  <connectionStrings>
-		  <add> name ="Tournament" connectionString="Server=.\SQLEXPRESS;DataBase=Tournament;Trusted_Connection=True;SystemProvider;"providerName="System.Data.SqlClient"</add>
+		  <add> name ="Tournaments" connectionString="Server=.\SQLEXPRESS;DataBase=Tournaments;Trusted_Connection=True;SystemProvider;"providerName="System.Data.SqlClient"</add>
 	  </connectionStrings> 
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
