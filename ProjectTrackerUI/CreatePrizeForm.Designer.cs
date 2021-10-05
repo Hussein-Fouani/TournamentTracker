@@ -45,7 +45,7 @@ namespace ProjectTrackerUI
             // 
             // Place_Number_txtbx
             // 
-            this.Place_Number_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Place_Number_txtbx.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Place_Number_txtbx.Location = new System.Drawing.Point(197, 128);
             this.Place_Number_txtbx.Multiline = true;
             this.Place_Number_txtbx.Name = "Place_Number_txtbx";
@@ -79,7 +79,7 @@ namespace ProjectTrackerUI
             // 
             // Place_name_txtbx
             // 
-            this.Place_name_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Place_name_txtbx.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Place_name_txtbx.Location = new System.Drawing.Point(197, 175);
             this.Place_name_txtbx.Multiline = true;
             this.Place_name_txtbx.Name = "Place_name_txtbx";
@@ -100,13 +100,14 @@ namespace ProjectTrackerUI
             // 
             // Prize_Amount_txtbx
             // 
-            this.Prize_Amount_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Prize_Amount_txtbx.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Prize_Amount_txtbx.Location = new System.Drawing.Point(197, 221);
             this.Prize_Amount_txtbx.Multiline = true;
             this.Prize_Amount_txtbx.Name = "Prize_Amount_txtbx";
             this.Prize_Amount_txtbx.PlaceholderText = "0";
             this.Prize_Amount_txtbx.Size = new System.Drawing.Size(219, 31);
             this.Prize_Amount_txtbx.TabIndex = 20;
+            this.Prize_Amount_txtbx.Text = "0";
             // 
             // Prize_Amount_label
             // 
@@ -122,13 +123,14 @@ namespace ProjectTrackerUI
             // 
             // Prize_Percentage_txtbx
             // 
-            this.Prize_Percentage_txtbx.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Prize_Percentage_txtbx.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Prize_Percentage_txtbx.Location = new System.Drawing.Point(197, 314);
             this.Prize_Percentage_txtbx.Multiline = true;
             this.Prize_Percentage_txtbx.Name = "Prize_Percentage_txtbx";
             this.Prize_Percentage_txtbx.PlaceholderText = "0";
             this.Prize_Percentage_txtbx.Size = new System.Drawing.Size(219, 31);
             this.Prize_Percentage_txtbx.TabIndex = 22;
+            this.Prize_Percentage_txtbx.Text = "0";
             // 
             // Prize_percent_label
             // 

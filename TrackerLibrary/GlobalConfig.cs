@@ -5,28 +5,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrackerLibrary.DataAccess;
+using System.Data.SqlClient;
+using ProjectTrackerUI;
 
 namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> connections { get; private set; } = new();
+        public static IDataConnection connection { get; private set; } 
 
-        public static void InitializeConnections(bool database,bool texfiles)
+        public static void InitializeConnections(Enums db)
         {
             // Set Up the Sql Connection
-            if (database)
+            if (db== Enums.Sql)  
             {
                 SQLConnector connector = new();
-                connections.Add(connector);
+                connection=(connector);
             }
             // create the text  Connection
-            if (texfiles)   
+            else if (db== Enums.TextFile)   
             {
-
+                TextConnection text = new TextConnection();
+                connection = text;
             }
             
         }
+        
         public static string CnnString(string constring) => ConfigurationManager.ConnectionStrings[constring].ConnectionString;
 
     }

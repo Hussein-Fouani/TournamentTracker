@@ -18,7 +18,7 @@ namespace ProjectTrackerUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Initialize the database connection 
-            TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
+            TrackerLibrary.GlobalConfig.InitializeConnections(Enums.Sql);
             Application.Run(new CreatePrizeForm());
             ///Application.Run(new TournamentDashBoardForm());
         }

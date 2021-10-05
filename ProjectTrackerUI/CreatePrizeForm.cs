@@ -34,10 +34,7 @@ namespace ProjectTrackerUI
                     Prize_Amount_txtbx.Text,
                     Prize_Percentage_txtbx.Text);
 
-                foreach (IDataConnection item in GlobalConfig.connections)
-                {
-                    item.CreatePrize(prizeModel);
-                }
+                GlobalConfig.connection.CreatePrize(prizeModel);
                 Place_name_txtbx.Clear();
                 Place_Number_txtbx.Clear();
                 Prize_Amount_txtbx.Clear();

@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using TrackerLibrary.Models;
 using Dapper;
+using System.Configuration;
 
 namespace TrackerLibrary.DataAccess
 {
@@ -25,8 +26,9 @@ namespace TrackerLibrary.DataAccess
         /// <param name="model"> the Prize information  </param>
         /// <returns>the prize inforamtion including the unique idenifier</returns>
         public PrizeModel CreatePrize(PrizeModel model)
+
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Tournaments")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Tournaments"))) 
             {
                 var p = new DynamicParameters();
                 p.Add("@PlaceNumber", model.PlaceNumber);
@@ -35,7 +37,7 @@ namespace TrackerLibrary.DataAccess
                 p.Add("PrizePercentage", model.PrizePercentage);
                 p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                connection.Execute("Prizes_Info",p,commandType:CommandType.StoredProcedure);
+                connection.Execute("Prizes_Info", p, commandType: CommandType.StoredProcedure);
 
                 model.ID = p.Get<int>("@id");
 
